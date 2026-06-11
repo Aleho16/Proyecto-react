@@ -4,7 +4,10 @@ import './styles.css';
 
 import App from './App';
 function Square({ value }) {
-  return <button className="square">{value}</button>;
+  function handleClick() {
+    console.log('¡hiciste clic!');
+  }
+  return <button className="square" onClick={handleClick}>{value}</button>;
 }
 export default function Board() {
   return (
