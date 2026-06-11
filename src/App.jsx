@@ -1,9 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
+import { useState } from 'react';
 
 import App from './App';
-function Square({ value }) {
+function Square() {
+  const [value, setValue] = useState(null);
   function handleClick() {
     console.log('¡hiciste clic!');
   }
